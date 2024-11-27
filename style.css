@@ -1,0 +1,95 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('img1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3em;
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Container for Left and Right Content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+/* Left Column Styles */
+.left {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Right Column Styles */
+.right {
+    flex: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.right section {
+    margin-bottom: 20px;
+}
+
+.right h2, .right h3 {
+    color: #0064FA;
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+.right p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.right a {
+    color: #FF4500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left, .right {
+        width: 80%;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+}
